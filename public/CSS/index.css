@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+header h1 {
+    color: aliceblue;
+    font-size: 45px;
+}
+
+header {
+    background-color: rgb(50, 102, 168);
+}
+
+.section {
+    width: 100%;
+    height: calc(100vh - 86.25px);
+    background-color: #000000;
+    /* Cor de fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.button {
+    margin: 0 20px;
+    padding: 20px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Efeito ao passar o mouse */
+.button:hover {
+    background-color: #2980b9;
+}
+
+/* Efeito de clique */
+.button:active {
+    transform: scale(0.95);
+    /* Reduz ligeiramente o tamanho ao clicar */
+    animation: clickEffect 0.3s ease;
+}
+
+/* Animação do clique */
+@keyframes clickEffect {
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+
+.buttonClick {
+    box-shadow: #2980b9;
+}
